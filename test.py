@@ -13,8 +13,11 @@ y = data.iloc[:, -1]
 """
 Q2: Uncomment these lines for applying discretizing and scaling
 """
+# # Bin continuous data into intervals.
 # discretizer = KBinsDiscretizer(n_bins=3, encode='ordinal', strategy='quantile')
 # discretized_features = discretizer.fit_transform(features)
+
+# # Scale about zero
 # scaler = StandardScaler()
 # scaled_features = scaler.fit_transform(discretized_features)
 
